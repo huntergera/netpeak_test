@@ -1,0 +1,32 @@
+/* **************** MIXINS ****************** */
+	.hover-color(@hover_color){
+		&:hover{
+			color: darken(@hover_color, 8%)
+		}
+	}
+	.hover-color__lighten(@hover_color){
+		&:hover{
+			color: lighten(@hover_color, 15%)
+		}
+	}
+	.hover-bg(@hover_color){
+		&:hover{
+			background: darken(@hover_color, 8%)
+		}
+	}
+	.bg__gradient(@color-1, @color-2){
+		background: linear-gradient( 115deg, @color-1 10%,  @color-2 100%);
+	}
+// 	.btn{
+// 		background: @green;
+// 		color: @white;
+// 		border-radius: 6px;
+// 		transition: background .2s;
+// 		&:hover{
+// 			background: lighten(@green, 7%)
+// 		}
+// 	}
+// 	.border-bottom{
+// 		border-bottom: 1px solid @border_color;
+// 		padding: 17px 0;
+// 	}
